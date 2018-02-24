@@ -1,5 +1,5 @@
 from unittest import TestCase, skip
-import RealEstateAnalysis
+#import RealEstateAnalysis
 
 
 class RealEstateAnalysisTest(TestCase):
@@ -9,6 +9,5 @@ class RealEstateAnalysisTest(TestCase):
 	def tearDown(self):
 		pass
 
-	@skip('Tests not implemented')
 	def test_something(self):
 		self.assertTrue(False)

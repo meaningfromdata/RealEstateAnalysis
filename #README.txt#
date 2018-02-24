@@ -6,4 +6,6 @@ RealEstateAnalysis
 
 Installation
 ------------
-Installation notes go here.
+Simply call
+$ make all
+from the directory containing the Makefile. That's it!

@@ -4,9 +4,11 @@
 *.log
 #*#
 Thumbs.db
+__pycache__/
 /*.egg-info/
 /build/
 /dist/
 /.idea/
 /.venv/
 *.code-workspace
+.vscode
