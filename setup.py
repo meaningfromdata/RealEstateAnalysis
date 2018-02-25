@@ -4,13 +4,6 @@ try:
 except ImportError:
     from distutils.core import setup
 
-# Allow trove classifiers in previous python versions
-from sys import version
-if version < '2.2.3':
-    from distutils.dist import DistributionMetadata
-    DistributionMetadata.classifiers = None
-    DistributionMetadata.download_url = None
-
 from RealEstateAnalysis import __version__ as version
 
 def requireModules(moduleNames=None):
