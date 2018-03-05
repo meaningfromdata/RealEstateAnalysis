@@ -15,3 +15,6 @@ test: .venv setup.py
 clean:
 	rm -rf .venv build *.egg-info
 	rm -f `find . -name \*.pyc -print0 | xargs -0`
+
+notebook: .venv 
+	PYTHONPATH=.venv ; . .venv/bin/activate && jupyter notebook

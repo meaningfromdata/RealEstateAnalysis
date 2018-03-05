@@ -10,11 +10,13 @@ RealEstateAnalysis
 
 Installation
 ------------
-Simply call
+AFTER PULL:
 $ make all
 from the directory containing the Makefile. 
 This should install all requirements and start the virtual environment.
 
+TO START A JUPYTER NOTEBOOK:
+$ make notebook
 
 
 
