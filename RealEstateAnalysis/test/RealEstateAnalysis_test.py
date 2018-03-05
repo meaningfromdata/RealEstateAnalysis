@@ -1,6 +1,6 @@
 from unittest import TestCase, skip
 import RealEstateAnalysis
-from RealEstateAnalysis.data import DataStream, DataCsv
+from RealEstateAnalysis.Data import DataStream, DataCsv
 class RealEstateAnalysisTest(TestCase):
 	def setUp(self):
 		pass

@@ -12,4 +12,5 @@ __pycache__/
 /.venv/
 *.code-workspace
 .vscode
-
+/.ipynb_checkpoints/
+/.pytest_cache/

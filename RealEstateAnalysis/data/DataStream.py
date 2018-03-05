@@ -1,6 +1,6 @@
 import requests
 import random
-from RealEstateAnalysis.data.DataModel import DataSource, DataArray
+from RealEstateAnalysis.Data.DataModel import DataSource, DataArray
 
 def new (url):
     return DataStream(url)

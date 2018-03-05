@@ -1,7 +1,7 @@
 import csv
 import random
 
-from RealEstateAnalysis.data.DataModel import DataSource
+from RealEstateAnalysis.Data.DataModel import DataSource
 
 def new(file, encoding = None):
     return DataCsv(file, encoding)
