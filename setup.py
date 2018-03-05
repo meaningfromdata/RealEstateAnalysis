@@ -38,5 +38,5 @@ setup(
 
     ]),
 
-    test_suite='RealEstateAnalysis'
+    test_suite='RealEstateAnalysis.test'
 )
