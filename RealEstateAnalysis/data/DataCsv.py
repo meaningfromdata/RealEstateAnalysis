@@ -1,5 +1,6 @@
 import csv
 import random
+import os
 
 from RealEstateAnalysis.Data.DataModel import DataSource
 
@@ -13,12 +14,14 @@ class DataCsv(DataSource):
         return "CSV Data from {0}".format(self.file)
     
     def __iter__(self):
-        return super(DataCsv, self).__iter__()
+        return super().__iter__()
 
     def __init__(self, file, encoding=None):
         DataSource.__init__(self)
         self.__file = file
         self.__encoding = encoding
+        fileDir = os.path.dirname(os.path.realpath('__file__'))
+        self.__filePath = os.path.join(fileDir, file)
 
     @property 
     def encoding(self):
@@ -33,7 +36,7 @@ class DataCsv(DataSource):
         return self
 
     def load(self):
-        with open (self.file, "r", encoding=self.encoding) as csvfile:
+        with open (self.__filePath, "r", encoding=self.encoding) as csvfile:
             firstLine = csvfile.readline().split(',')
             headers = [ header.strip().lower().replace(" ", "_")
                         for header in firstLine
@@ -43,7 +46,7 @@ class DataCsv(DataSource):
                 self.processor(row) for row in csvreader
                     if self.test(row)
             ]
-            super().load()
+        super().load()
         return self
 
 
