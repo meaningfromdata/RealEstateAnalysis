@@ -14,4 +14,4 @@ __pycache__/
 .vscode/
 .ipynb_checkpoints/
 .pytest_cache/
-/SampleData/Tax_Parcels.json
+Tax_Parcels.json
