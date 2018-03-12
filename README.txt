@@ -2,12 +2,6 @@
 RealEstateAnalysis
 ============
 
-RealEstateAnalysis
-
-Installation
-------------
-RealEstateAnalysis
-
 Installation
 ------------
 AFTER PULL:
