@@ -18,5 +18,8 @@ This should install all requirements and start the virtual environment.
 TO START A JUPYTER NOTEBOOK:
 $ make notebook
 
+TO DOWNLOAD SAMPLE DATA 
+$ make sampledata
+
 
 

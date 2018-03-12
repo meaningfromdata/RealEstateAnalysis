@@ -18,3 +18,6 @@ clean:
 
 notebook: .venv 
 	PYTHONPATH=.venv ; . .venv/bin/activate && jupyter notebook
+
+sampledata: 
+	wget -O RealEstateAnalysis/SampleData/TaxParcels.json https://opendata.arcgis.com/datasets/73dc8f3b384e4dfcbeb162996fef62d0_0.geojson
